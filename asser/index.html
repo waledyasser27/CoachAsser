@@ -1,0 +1,188 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: url('rawpower.jfif') no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+            padding-top: 60px; /* Space for header */
+        }
+
+        header {
+            background: rgba(0, 0, 0, 0.6); /* Semi-transparent black */
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            position: relative; /* Makes header static */
+            width: 100%;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .section-title {
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-align: center;
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 5px;
+        }
+
+        .video-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-between; /* Adjust this to spread out the videos evenly */
+            margin-top: 20px;
+        }
+
+        .video-box {
+            flex: 1 1 300px; /* Flexbox layout to allow resizing */
+            background: rgba(255, 255, 255, 0.8);
+            padding: 15px;
+            border-radius: 6px;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        video {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #222;
+            color: #aaa;
+            margin-top: 40px;
+        }
+
+        /* Media Query for mobile devices */
+        @media (max-width: 768px) {
+            .video-grid {
+                justify-content: center; /* Center videos on smaller screens */
+            }
+
+            .video-box {
+                flex: 1 1 100%; /* Full width for each video box on small screens */
+                margin-bottom: 10px; /* Smaller margin for mobile */
+            }
+        }
+
+        /* Media Query for larger screens like tablets and above */
+        @media (max-width: 1024px) {
+            .video-grid {
+                justify-content: center; /* Center videos on medium screens */
+            }
+
+            .video-box {
+                flex: 1 1 48%; /* 2 videos per row on medium-sized screens */
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Asser Amr</h1>
+        <p>Personal Trainer | Swimming Trainer</p>
+        <p>Owner of Raw Power Academy</p>
+    </header>
+
+    <div class="container">
+        <section>
+            <h2 class="section-title">Featured Videos</h2>
+            <div class="video-grid">
+
+                <div class="video-box">
+                    <video controls>
+                        <source src="WhatsApp Video 2025-08-07 at 2.54.40 PM.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p>Project Demo 1</p>
+                </div>
+
+                <div class="video-box">
+                    <video controls>
+                        <source src="WhatsApp Video 2025-08-07 at 2.54.42 PM.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p>Project Demo 2</p>
+                </div>
+
+                <div class="video-box">
+                    <video controls>
+                        <source src="v3.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p>Project Demo 3</p>
+                </div>
+
+                <div class="video-box">
+                    <video controls>
+                        <source src="v4.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p>Project Demo 4</p>
+                </div>
+
+                <div class="video-box">
+                    <video controls>
+                        <source src="v5.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p>Project Demo 5</p>
+                </div>
+
+                <div class="video-box">
+                    <video controls>
+                        <source src="v6.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p>Project Demo 6</p>
+                </div>
+                <div class="video-box">
+                    <video controls>
+                        <source src="v7.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p>Project Demo 7</p>
+                </div>
+                <div class="video-box">
+                    <video controls>
+                        <source src="v8.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p>Project Demo 8</p>
+                </div>
+                <div class="video-box">
+                    <video controls>
+                        <source src="v9.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p>Project Demo 9</p>
+                </div>
+
+
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        &copy; 2025 Raw Power Academy. All rights reserved.
+    </footer>
+
+</body>
+</html>
